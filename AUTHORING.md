@@ -2,6 +2,31 @@
 
 This site is intentionally editable without a build step. Most content lives in folders and `.txt` files.
 
+## Customize Site Sections
+
+The template starts with four main tabs:
+
+```txt
+Portfolio
+Photography
+Articles
+About
+```
+
+These are only defaults. You can change sections according to your interests. For example, `Photography` can become `Sketchbook`, `Experiments`, `Gallery`, or `Photo Essays`. `Articles` can become `Writing`, `Notes`, `Tutorials`, `Process`, or `Research`.
+
+For the no-code beginner path, keep the same filenames and only change the visible tab labels first:
+
+- Edit the navigation text in `index.html`, `photography.html`, `articles.html`, `about.html`, and `sitemap.html`.
+- Edit the page title in the `<title>` tag if you want the browser tab to match.
+- Replace the content in the matching folders and config files.
+
+For example, if you want `Articles` to become `Writing`, you can keep `articles.html` and `Articles/` as the file/folder names, but change the visible tab text from `Articles` to `Writing`.
+
+Only rename files or folders after you are comfortable updating every link that points to them.
+
+The `About` section is the easiest section to keep because it is already powered by profile and resume-style text files in `Config/`.
+
 ## Projects
 
 To add a portfolio project:
@@ -126,6 +151,8 @@ Last updated: July 2026
 The sitemap page is `sitemap.html`; it reads the same project, photography, and article config files as the rest of the site.
 
 ## About/Profile
+
+The About/Profile section is where visitors learn who is behind the work. Use it for your bio, tools, skills, education, experience, certificates, or activities.
 
 Profile, summary, skills, software, and work/education content live in `Config/*.txt` files.
 

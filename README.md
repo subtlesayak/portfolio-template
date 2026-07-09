@@ -1,6 +1,10 @@
 # Portfolio Template
 
-A simple, editable portfolio website for designers, artists, photographers, students, and makers.
+## Brief Intro
+
+This is a simple portfolio website template for people who want a clean personal site without learning a heavy framework. Most edits happen in text files and folders, so you can focus on your work instead of fighting the website.
+
+You can use it for design work, photography, writing, student projects, experiments, or any mix of sections that fits your interests. A live example of this template style is here: https://subtlesayak.github.io/
 
 This template is based on the original `artofpilgrim/portfolio-template` idea: keep the website as plain HTML, CSS, JavaScript, folders, and text files. You do not need React, Node, a database, or a build step.
 
@@ -32,6 +36,38 @@ If you are new to GitHub, do this slowly. It is normal if it feels weird the fir
 8. Visit your GitHub Pages URL.
 
 You can make a working portfolio by editing only `.txt` files and replacing images.
+
+## Choose Your Sections
+
+The default sections are:
+
+```txt
+Portfolio     your main project grid
+Photography   optional photo galleries or visual collections
+Articles      optional writing, notes, tutorials, or process posts
+About         your profile, skills, education, and experience
+```
+
+Think of `Photography` and `Articles` as examples, not rules. Change them to match your interests.
+
+Examples:
+
+```txt
+Designer:     Portfolio, Photography, Articles, About
+Photographer: Portfolio, Photo Essays, Gear Notes, About
+Developer:    Projects, Experiments, Writing, About
+Student:      Work, Class Projects, Sketchbook, About
+Artist:       Gallery, Process, Exhibitions, About
+```
+
+Beginner-safe way to customize sections:
+
+1. Keep the file names the same at first.
+2. Change the visible tab text in the navigation.
+3. Replace the content in the matching folders and text files.
+4. Only rename files like `articles.html` or `photography.html` after you are comfortable updating links.
+
+The About section is usually worth keeping. It helps visitors understand who you are, what you do, what tools you use, and how to contact you.
 
 ## Folder Map
 
@@ -81,6 +117,8 @@ Rules:
 Before adding a resume PDF, read `SECURITY-CHECKLIST.md`.
 
 ## Edit The About Page
+
+The About page is your profile section. Use it for the short story behind the work: who you are, what you make, what you are learning, and what kind of work you want next.
 
 The About page uses these files:
 
