@@ -1,0 +1,9 @@
+Photography Starter Collection
+---
+Month Year
+---
+City, Country
+---
+Use this area for one event, trip, walk, shoot, or visual study. Replace the placeholder image with real photos when ready.
+---
+photo-placeholder.svg: Replace this caption with a note about the photo.

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Project cover placeholder">
+  <rect width="1200" height="800" fill="#101010"/>
+  <rect x="86" y="86" width="1028" height="628" rx="22" fill="#171717" stroke="#edb049" stroke-width="6"/>
+  <text x="120" y="220" fill="#f2f2f2" font-family="Arial, sans-serif" font-size="72" font-weight="700">Project Cover</text>
+  <text x="120" y="310" fill="#a9a9a9" font-family="Arial, sans-serif" font-size="34">Replace this SVG with your own thumbnail.</text>
+  <rect x="120" y="420" width="430" height="90" rx="14" fill="#edb049"/>
+  <text x="150" y="478" fill="#101010" font-family="Arial, sans-serif" font-size="34" font-weight="700">Your Work Here</text>
+</svg>

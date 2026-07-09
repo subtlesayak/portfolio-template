@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchProjects = async () => {
         try {
-            const response = await fetch('../../Config/projects.txt');
+            const response = await fetch('../../Config/projects.txt?v=2.0');
             const text = await response.text();
             return text.split('\n').map(line => line.trim()).filter(line => line);
         } catch (error) {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchDescription = async () => {
         try {
-            const response = await fetch('description.txt');
+            const response = await fetch('description.txt?v=1.2');
             const text = await response.text();
             const [title, description, tags] = text.split('---').map(line => line.trim());
             document.getElementById('project-title').textContent = title;
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadMedia = async () => {
         try {
-            const response = await fetch('media.txt');
+            const response = await fetch('media.txt?v=1.2');
             const text = await response.text();
             const mediaContainer = document.getElementById('project-media');
             const lines = text.split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#'));
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let urls = [lines[i]];
 
                 // Check if the next line is a description
-                if (i + 1 < lines.length && !lines[i + 1].match(/\.(jpeg|jpg|gif|png|mp4|webm|mview)$/) && !lines[i + 1].includes('youtube.com') && !lines[i + 1].includes('sketchfab.com') && !lines[i + 1].includes(' // ')) {
+                if (i + 1 < lines.length && !lines[i + 1].match(/\.(jpeg|jpg|gif|png|webp|svg|avif|mp4|webm|mview)$/) && !lines[i + 1].includes('youtube.com') && !lines[i + 1].includes('sketchfab.com') && !lines[i + 1].includes(' // ')) {
                     description = lines[i + 1];
                     i += 1;
                 }
@@ -92,7 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 // Adjust URLs for relative paths
-                urls = urls.map(url => (url.startsWith('http') ? url : basePath + url));
+                urls = urls.map(url => {
+                    const cleanUrl = url.replace(/\*$/, '').trim();
+                    return cleanUrl.startsWith('http') ? cleanUrl : basePath + cleanUrl;
+                });
 
                 if (description.includes('(marmoset viewer)')) {
                     urls = [`${urls[0]}.mview`];
@@ -126,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const createMediaElement = (urls, description) => {
         let mediaElement;
 
-        if (urls[0].match(/\.(jpeg|jpg|gif|png)$/) != null) {
+        if (urls[0].match(/\.(jpeg|jpg|gif|png|webp|svg|avif)$/) != null) {
             mediaElement = createImageElement(urls);
         } else if (urls[0].match(/\.(mp4|webm)$/) != null) {
             mediaElement = createVideoElement(urls[0]);
@@ -246,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchStats = async () => {
         try {
-            const response = await fetch('stats.txt');
+            const response = await fetch('stats.txt?v=1.2');
             const text = await response.text();
             const lines = text.split('\n').map(line => line.trim()).filter(line => line);
             const statsContainer = document.getElementById('project-stats');
@@ -350,8 +353,29 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltip.style.left = `${left}px`;
     };
 
+    const goBackToPortfolio = () => {
+        window.location.href = '../../index.html';
+    };
+
+    const createProjectBackButton = () => {
+        if (document.querySelector('.project-back-button')) return;
+
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'project-back-button';
+        button.setAttribute('aria-label', 'Back to portfolio');
+        button.title = 'Back to portfolio';
+
+        const icon = document.createElement('i');
+        icon.className = 'fa fa-arrow-left';
+        icon.setAttribute('aria-hidden', 'true');
+        button.appendChild(icon);
+        button.addEventListener('click', goBackToPortfolio);
+
+        document.body.appendChild(button);
+    };
     const navigateProjects = async (direction) => {
-        const currentProject = window.location.pathname.split('/').slice(-2, -1)[0];
+        const currentProject = decodeURIComponent(window.location.pathname.split('/').slice(-2, -1)[0]);
         const currentIndex = projects.indexOf(currentProject);
 
         if (currentIndex !== -1) {
@@ -361,7 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const newProject = projects[newIndex];
             try {
-                const response = await fetch(`../${newProject}/description.txt`);
+                const response = await fetch(`../${newProject}/description.txt?v=1.2`);
                 const text = await response.text();
                 const htmlFileName = text.split('---')[4].trim(); // Extract the HTML filename from the description.txt
                 window.location.href = `../${newProject}/${htmlFileName}`;
@@ -386,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Keyboard navigation
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
-            window.location.href = '../../index.html';
+            goBackToPortfolio();
         } else if (event.key === 'ArrowLeft') {
             navigateProjects(-1);
         } else if (event.key === 'ArrowRight') {
@@ -400,6 +424,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize the app
     const init = async () => {
+        if (window.PortfolioControls) window.PortfolioControls.initViewControls({ showResize: false });
+        createProjectBackButton();
         projects = await fetchProjects();
         document.getElementById('prev-project').addEventListener('click', () => navigateProjects(-1));
         document.getElementById('next-project').addEventListener('click', () => navigateProjects(1));

@@ -1,0 +1,23 @@
+# Secrets and private local files
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Private drafts or source files that are usually too large/private for a portfolio template
+_private/
+private/
+Drafts/
+*.psd
+*.ai
+*.fig
+*.sketch
+*.zip
+
+# Operating system clutter
+.DS_Store
+Thumbs.db

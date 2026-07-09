@@ -1,0 +1,2 @@
+# Add validator warning ignores here only when you intentionally keep a missing legacy asset reference.
+# Format: path/to/file.txt

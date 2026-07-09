@@ -1,0 +1,15 @@
+Starter Article Title
+---
+Month Year
+---
+A one-sentence summary for the article card.
+---
+# Start Here
+
+Write your article here. You can use short paragraphs, `#` headings, `##` subheadings, `**bold**`, and `*italic*`.
+
+---
+
+## Add Your Own Voice
+
+Replace this file with your own notes, essays, case-study reflections, or process writing.

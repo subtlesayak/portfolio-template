@@ -8,12 +8,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const response = await fetch('../Config/recommendations.txt');
+        const response = await fetch('../Config/recommendations.txt?v=1.2');
         if (!response.ok) {
             throw new Error(`Network response was not ok: ${response.statusText}`);
         }
         const text = await response.text();
         const recommendations = text.split('---').map(rec => rec.trim()).filter(rec => rec);
+
+        if (recommendations.length === 0) {
+            document.body.classList.add('no-recommendations');
+            const panel = document.querySelector('.recommendations-panel');
+            const title = panel?.previousElementSibling;
+            if (title?.classList.contains('panel-title')) {
+                title.style.display = 'none';
+            }
+            if (panel) {
+                panel.style.display = 'none';
+            }
+            return;
+        }
 
         const recommendationFragment = document.createDocumentFragment();
         const dotsFragment = document.createDocumentFragment();

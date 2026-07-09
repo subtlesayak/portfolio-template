@@ -1,10 +1,9 @@
-https://yourprofilepic.png
+/Resources/placeholders/profile.svg
 Your Name
-Your Role @ Company
-Your Location
-https://x.com/ArtOfPilgrim
-http://youtube.com/c/ArtofPilgrim
-https://www.linkedin.com/in/thomasrwbutters/
-https://www.artstation.com/art_of_pilgrim
-https://discord.com/invite/WCnQ5bQa6Q
-youremail@email.com
+Your Role @ Studio or Company
+Your City, Country
+A short one-line intro about what you make.
+https://github.com/your-username
+https://www.linkedin.com/in/your-username/
+https://www.behance.net/your-username
+your.email@example.com

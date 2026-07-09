@@ -1,13 +1,4 @@
-Triangles: 
-
-Materials: 
-
-Texture Size: 
-
-Texel Density: 
-
-Workflow: 
-
-Target Engine: 
-
-Collaborators:
+Role: Designer
+Timeline: Month Year
+Tools: Blender, Figma
+Collaborators: Your name or team
