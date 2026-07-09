@@ -19,6 +19,7 @@ This template is based on the original `artofpilgrim/portfolio-template` idea: k
 - Thumbnail size controls on portfolio and photography grids.
 - A small e-ink style page transition toggle.
 - A sitemap page.
+- GEO/SEO starter files: `robots.txt`, `sitemap.xml`, `llms.txt`, metadata tags, and a checklist.
 - Starter folders you can copy instead of building from nothing.
 - A local validation script that catches missing files before you publish.
 
@@ -323,6 +324,14 @@ If the validator passes, you will see:
 ```txt
 Content validation passed.
 ```
+
+## Make The Site Easier For Search And AI Tools To Understand
+
+This template includes a small Generative Engine Optimization starter kit. Open `GEO-CHECKLIST.md` before publishing.
+
+At minimum, replace `https://your-domain.example` with your real GitHub Pages URL in `robots.txt`, `sitemap.xml`, `llms.txt`, and the HTML metadata. Also update page descriptions so they describe your real work.
+
+The goal is simple: make your public pages, projects, and About section easier for search engines and AI tools to understand without changing the visual design.
 
 ## Publish With GitHub Pages
 

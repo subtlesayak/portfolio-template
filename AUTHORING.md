@@ -156,6 +156,19 @@ The About/Profile section is where visitors learn who is behind the work. Use it
 
 Profile, summary, skills, software, and work/education content live in `Config/*.txt` files.
 
+## Search And AI Discoverability
+
+The site includes these public discovery files:
+
+- `robots.txt` points crawlers to the XML sitemap.
+- `sitemap.xml` lists important pages and project pages.
+- `llms.txt` gives AI tools a short Markdown overview of the site.
+- HTML metadata gives each page a title, description, canonical URL, preview image, and structured data.
+
+When you publish your own copy, replace `https://your-domain.example` with your real site URL everywhere it appears. Keep `llms.txt` short, factual, and public-safe.
+
+Strong project descriptions help more than keyword lists. For each project, explain your role, the problem, the process, tools used, and the outcome or learning.
+
 ## Optional Validation
 
 Before publishing, run:

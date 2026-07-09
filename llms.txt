@@ -1,0 +1,25 @@
+# Portfolio Template
+
+> A beginner-editable static portfolio template for projects, photography, articles, and an about page. It uses plain HTML, CSS, JavaScript, folders, and text files so people can customize it without a framework.
+
+Replace `https://your-domain.example`, `Your Name`, placeholder links, and sample project content before publishing. Do not add private information, secrets, or unpublished client work to this public file.
+
+## Main Pages
+- [Portfolio](https://your-domain.example/): Main project grid.
+- [Photography](https://your-domain.example/photography.html): Photography or visual collection section.
+- [Articles](https://your-domain.example/articles.html): Writing, process notes, or article section.
+- [About](https://your-domain.example/about.html): Profile, skills, education, experience, and contact section.
+- [Sitemap](https://your-domain.example/sitemap.html): Human-readable site map.
+
+## Example Projects
+- [Example Project](https://your-domain.example/Projects/Example%20Project/template-project.html): This is a starter project. Replace this text with a short explanation of the project, your role, the problem, and what you made.
+- [Second Example Project](https://your-domain.example/Projects/BigMegaGunExample/bigmegagun.html): Use this second example to test ordering, thumbnails, and duplicate project setup. You can delete it when your own work is ready.
+
+## Template Authoring
+- [README](https://your-domain.example/README.md): Beginner setup, editing, validation, and publishing instructions.
+- [Authoring Guide](https://your-domain.example/AUTHORING.md): Detailed guide for adding projects, photography collections, articles, and about content.
+- [GEO Checklist](https://your-domain.example/GEO-CHECKLIST.md): Search and AI discoverability checklist.
+- [Security Checklist](https://your-domain.example/SECURITY-CHECKLIST.md): Public publishing safety checklist.
+
+## Optional Reference
+- [Live example](https://subtlesayak.github.io/): Example portfolio built from this style.

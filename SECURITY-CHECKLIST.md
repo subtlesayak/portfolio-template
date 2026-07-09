@@ -47,6 +47,10 @@ Look for risky files before committing:
 rg --files | rg -i "\.(pdf|docx|env|key|pem|p12|pfx|psd|ai|fig|sketch|zip)$"
 ```
 
+## GEO And Metadata Are Public
+
+`llms.txt`, `sitemap.xml`, `robots.txt`, and HTML meta tags are designed to be read by crawlers. Do not put private phone numbers, private addresses, hidden emails, client-confidential names, unpublished work, private document links, passwords, API keys, or secrets in those files.
+
 ## Photos And EXIF Metadata
 
 Photos can contain camera, date, and sometimes GPS information. If privacy matters, export smaller web copies or strip metadata before adding photos.
