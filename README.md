@@ -19,7 +19,7 @@ This template is based on the original `artofpilgrim/portfolio-template` idea: k
 - An About page that reads your summary, skills, software, education, and experience from text files.
 - Auto, dark, and light theme control.
 - Thumbnail size controls on portfolio and photography grids.
-- A small e-ink style page transition toggle.
+- An optional region-based e-ink refresh on page load, navigation, and interactive clicks.
 - A sitemap page.
 - GEO/SEO starter files: `robots.txt`, `sitemap.xml`, `llms.txt`, metadata tags, and a checklist.
 - Starter folders you can copy instead of building from nothing.
