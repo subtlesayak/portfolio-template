@@ -1,10 +1,12 @@
 # Portfolio Template
 
+[Live example](https://subtlesayak.github.io/) | [Original inspiration](https://github.com/artofpilgrim/portfolio-template)
+
 ## Brief Intro
 
 This is a simple portfolio website template for people who want a clean personal site without learning a heavy framework. Most edits happen in text files and folders, so you can focus on your work instead of fighting the website.
 
-You can use it for design work, photography, writing, student projects, experiments, or any mix of sections that fits your interests. A live example of this template style is here: https://subtlesayak.github.io/
+You can use it for design work, photography, writing, student projects, experiments, or any mix of sections that fits your interests. See the finished structure in the [live example](https://subtlesayak.github.io/). Use it as a reference for navigation, project presentation, photography collections, articles, and the About page; replace its personal content with your own.
 
 This template is based on the original `artofpilgrim/portfolio-template` idea: keep the website as plain HTML, CSS, JavaScript, folders, and text files. You do not need React, Node, a database, or a build step.
 
@@ -37,6 +39,23 @@ If you are new to GitHub, do this slowly. It is normal if it feels weird the fir
 8. Visit your GitHub Pages URL.
 
 You can make a working portfolio by editing only `.txt` files and replacing images.
+
+## Your First Edits
+
+Start with these files in this order. You can ignore the CSS and JavaScript until the content is yours.
+
+| What you are changing | Where to edit |
+| --- | --- |
+| Name, role, location, intro, social links, resume | `Config/userinformation.txt` |
+| Short About paragraph | `Config/summary.txt` |
+| Software and skills | `Config/software.txt` and `Config/skills.txt` |
+| Experience, education, projects, certificates | `Config/productions.txt` |
+| Project order | `Config/projects.txt` |
+| Article list | `Config/articles.txt` |
+| Quiet update date | `Config/site.txt` |
+| Search and AI metadata | `GEO-CHECKLIST.md` |
+
+After those edits, replace the profile image, project thumbnails, project media, and photography files. Run the validator before publishing.
 
 ## Choose Your Sections
 
@@ -132,6 +151,19 @@ Config/recommendations.txt  optional recommendations
 ```
 
 If you do not have recommendations yet, leave `Config/recommendations.txt` empty.
+
+Each card in `Config/productions.txt` uses five parts:
+
+```txt
+Role, degree, project group, or activity title
+Company, school, or organization
+Date and location
+Resources/work-experience/your-folder/logo.png
+A short description. Add more lines when needed.
+---
+```
+
+The `---` line starts the next card. Keep every image path on the fourth line of its card. Logos can have different proportions; the site places them inside one consistent image frame. For best results, use a clear square or landscape PNG/JPG with a little breathing room around the mark.
 
 ## Add A Project
 
@@ -332,6 +364,20 @@ This template includes a small Generative Engine Optimization starter kit. Open 
 At minimum, replace `https://your-domain.example` with your real GitHub Pages URL in `robots.txt`, `sitemap.xml`, `llms.txt`, and the HTML metadata. Also update page descriptions so they describe your real work.
 
 The goal is simple: make your public pages, projects, and About section easier for search engines and AI tools to understand without changing the visual design.
+
+## Fill In The GitHub About Box
+
+The small About box on the right side of your GitHub repository helps people understand the project before opening the README.
+
+1. Open your repository on GitHub.
+2. Find the About box near the top-right of the repository page.
+3. Click its gear icon.
+4. Add a short description, such as `A simple portfolio built with HTML, CSS, JavaScript, folders, and editable text files.`
+5. Add your live GitHub Pages URL as the website.
+6. Add a few topics, such as `portfolio`, `portfolio-template`, `github-pages`, `static-site`, and your field.
+7. Save changes.
+
+Do not put private contact details in the repository description. Anything in the About box is public.
 
 ## Publish With GitHub Pages
 
