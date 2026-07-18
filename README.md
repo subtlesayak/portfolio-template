@@ -1,14 +1,56 @@
-# Portfolio Template
+<div align="center">
+  <a href="https://subtlesayak.github.io/">
+    <img src="Resources/placeholders/profile.svg" width="112" height="112" alt="Portfolio profile placeholder">
+  </a>
 
-[Live example](https://subtlesayak.github.io/) | [Original inspiration](https://github.com/artofpilgrim/portfolio-template)
+  <h1>Portfolio Template</h1>
 
-## Brief Intro
+  <p><strong>A simple portfolio for design, photography, writing, and everything in between.</strong></p>
+  <p>Edit text files, replace images, publish with GitHub Pages. No framework or build step required.</p>
 
-This is a simple portfolio website template for people who want a clean personal site without learning a heavy framework. Most edits happen in text files and folders, so you can focus on your work instead of fighting the website.
+  <p>
+    <a href="https://subtlesayak.github.io/"><img src="https://img.shields.io/badge/Live_example-View-a76b00?style=for-the-badge&logo=githubpages&logoColor=ffffff&labelColor=171717" alt="View a finished portfolio made from this template"></a>
+    <a href="https://github.com/subtlesayak/portfolio-template/fork"><img src="https://img.shields.io/badge/Fork_this_repo-Create_a_copy-4d4d4d?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=171717" alt="Fork the portfolio template"></a>
+    <a href="https://github.com/subtlesayak/portfolio-template/archive/refs/heads/main.zip"><img src="https://img.shields.io/badge/Download-ZIP-2f855a?style=for-the-badge&labelColor=171717" alt="Download the template as a ZIP file"></a>
+  </p>
 
-You can use it for design work, photography, writing, student projects, experiments, or any mix of sections that fits your interests. See the finished structure in the [live example](https://subtlesayak.github.io/). Use it as a reference for navigation, project presentation, photography collections, articles, and the About page; replace its personal content with your own.
+  <p>
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=171717" alt="JavaScript">
+    <img src="https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=githubpages&logoColor=white" alt="Ready for GitHub Pages">
+    <img src="https://img.shields.io/badge/Build_step-None-2f855a?style=flat-square" alt="No build step">
+  </p>
 
-This template is based on the original `artofpilgrim/portfolio-template` idea: keep the website as plain HTML, CSS, JavaScript, folders, and text files. You do not need React, Node, a database, or a build step.
+  <p>
+    <a href="https://github.com/subtlesayak/portfolio-template/commits/main"><img src="https://img.shields.io/github/last-commit/subtlesayak/portfolio-template?style=flat-square&label=Updated&color=a76b00" alt="Date of the latest template update"></a>
+    <a href="https://github.com/subtlesayak/portfolio-template"><img src="https://img.shields.io/github/repo-size/subtlesayak/portfolio-template?style=flat-square&label=Template%20size&color=171717" alt="Template repository size"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/github/license/subtlesayak/portfolio-template?style=flat-square&color=edb049" alt="MIT license"></a>
+  </p>
+</div>
+
+---
+
+## About This Template
+
+This is a clean personal-site starter for people who do not want to learn a heavy framework before showing their work. Most edits happen in text files and folders, so you can focus on content instead of tooling.
+
+Use it for design work, photography, writing, student projects, experiments, or any mix of sections that fits your interests. The [live portfolio](https://subtlesayak.github.io/) shows one finished interpretation with personal content and extra sections; replace all of that content with your own.
+
+The template follows the plain-file idea from [`artofpilgrim/portfolio-template`](https://github.com/artofpilgrim/portfolio-template): HTML, CSS, JavaScript, folders, and text files. You do not need React, a database, package installation, or a production build command.
+
+> One structure, many possible portfolios. Keep only the sections that help tell your story.
+
+## Start Here
+
+| I want to... | Go to... |
+| --- | --- |
+| See a finished version | [Live example](https://subtlesayak.github.io/) |
+| Create my own copy | [Quick Start](#quick-start) |
+| Replace the example content | [Your First Edits](#your-first-edits) |
+| Add work | [Project](#add-a-project), [Photography](#add-photography), or [Article](#add-an-article) |
+| Understand every content file | [AUTHORING.md](AUTHORING.md) |
+| Check privacy before publishing | [SECURITY-CHECKLIST.md](SECURITY-CHECKLIST.md) |
 
 ## What You Get
 
@@ -25,20 +67,22 @@ This template is based on the original `artofpilgrim/portfolio-template` idea: k
 - Starter folders you can copy instead of building from nothing.
 - A local validation script that catches missing files before you publish.
 
-## The Shortest Possible Setup
+## Quick Start
 
-If you are new to GitHub, do this slowly. It is normal if it feels weird the first time.
+If GitHub is new to you, take this one step at a time. You can make a working portfolio by editing only `.txt` files and replacing images.
 
-1. Open this repo on GitHub.
-2. Click `Use this template` or download the ZIP.
-3. Create your own repository.
-4. Put the files in your repository.
+1. Sign in to GitHub.
+2. [Fork this repository](https://github.com/subtlesayak/portfolio-template/fork), or [download the ZIP](https://github.com/subtlesayak/portfolio-template/archive/refs/heads/main.zip) and upload its contents to a new repository.
+3. Name the destination repository `<your-username>.github.io`, replacing the placeholder with your exact GitHub username.
+4. Keep the repository public if you use GitHub Free.
 5. Edit the text files in `Config/`.
-6. Replace the example project content in `Projects/`.
-7. Turn on GitHub Pages for your repository.
-8. Visit your GitHub Pages URL.
+6. Replace the example content in `Projects/`, `Articles/`, and `Resources/`.
+7. Open repository `Settings`, then `Pages`.
+8. Choose `Deploy from a branch`, select `main` and `/root`, then save.
+9. Visit `https://<your-username>.github.io/` after GitHub finishes publishing.
 
-You can make a working portfolio by editing only `.txt` files and replacing images.
+> [!IMPORTANT]
+> The exact `<your-username>.github.io` repository name lets this template's existing root-level paths work without code changes. A differently named project repository requires path adjustments before its Pages site will render correctly.
 
 ## Your First Edits
 
@@ -392,6 +436,10 @@ Do not put private contact details in the repository description. Anything in th
 
 If changes do not show instantly, wait a minute and refresh.
 
+GitHub Free supports Pages from public repositories. GitHub Pro, Team, and Enterprise plans can also publish from private repositories; the resulting Pages site is still public by default. See [GitHub's current Pages availability documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) before changing repository visibility.
+
+Never treat repository privacy as protection for content that the published website can display.
+
 ## Before You Commit
 
 Read `SECURITY-CHECKLIST.md` before publishing. The short version:
@@ -404,4 +452,8 @@ Read `SECURITY-CHECKLIST.md` before publishing. The short version:
 
 ## Credits
 
-This template was adapted from the plain-file workflow of `artofpilgrim/portfolio-template`, with extra beginner docs, photography collections, articles, theme controls, sitemap, and validation helpers.
+This template was adapted from the plain-file workflow of [`artofpilgrim/portfolio-template`](https://github.com/artofpilgrim/portfolio-template), with extra beginner documentation, photography collections, articles, theme controls, a sitemap, discovery metadata, and validation helpers.
+
+## License
+
+Released under the [MIT License](LICENSE).
